@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* ------- HEADER START ------- */
+nav {
+  background-color: rgb(71, 71, 95);
+  padding: 2vw 2vw 2vw;
+  margin-bottom: 2vw;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.logo {
+  aspect-ratio: 1/1;
+  width: 5cqw;
+  height: auto;
+}
+
+.logotxt {
+  display: flex;
+  gap: 2vw;
+  justify-content: center;
+}
+
+.pagelink a {
+  text-decoration: none;
+  color: black;
+}
+
+.pagelink a:hover,
+.sitename:hover {
+  text-shadow: rgb(255, 255, 255) 0px 0px 12px;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+}
+
+li a {
+  font-family: "Oswald", sans-serif;
+  font-weight: 600;
+}
+
+.pagelink {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2vw;
+  margin-top: 1vw;
+}
+
+.sitename {
+  margin-top: 1vw;
+  font-family: "DM Serif Display", sans-serif;
+  font-size: 1rem;
+  text-decoration: none;
+  color: black;
+}
+
+/* ------- HEADER END ------- */
+
+.hero {
+  aspect-ratio: 900/380;
+  height: 20vw;
+}
+
+.grid_1_til_2 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2vw;
+}
+
+.galleri {
+  display: none;
+}
+
+.sq_galleri {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3vw;
+  margin: 0 2vw 0;
+}
+
+.facade,
+video,
+iframe {
+  width: 90vw;
+  margin-top: 1vw;
+  margin-left: auto;
+  margin-right: auto;
+  aspect-ratio: 16/9;
+}
+
+/* ------- MAIN & FONTS ------- */
+body {
+  background-color: rgb(213, 207, 207);
+}
+main {
+  margin: 0 2vw;
+}
+
+h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-family: "DM Serif Display", serif;
+}
+h2 {
+  font-size: 1.5rem;
+  margin-top: 3vw;
+  margin-bottom: 1vw;
+  font-family: "Parkinsans", sans-serif;
+}
+
+p {
+  font-size: 1rem;
+  font-family: "Parkinsans", sans-serif;
+}
+
+/* ------- FOOTER START ------- */
+footer {
+  background-color: rgb(71, 71, 95);
+  margin-top: 3vw;
+  padding: 2vw 0 1vw 2vw;
+}
+/* ------- FOOTER END ------- */
+
+@media (min-width: 855px) {
+  /* ------- TEKST & BILLEDE START ------- */
+  .grid_1_til_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  h1 {
+    text-align: left;
+    font-size: 2.1rem;
+  }
+
+  .tekst h2 {
+    margin: 0.5vw 0 0;
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .facade {
+    width: 50vw;
+  }
+  /* ------- TEKST & BILLEDE END ------- */
+
+  .sitename,
+  .pagelink {
+    font-size: 2rem;
+  }
+
+  .logo {
+    max-height: 60px;
+  }
+
+  /* ------- GALLERI START ------- */
+  .sq_galleri {
+    display: none;
+  }
+
+  .galleri {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2vw;
+    width: 75vw;
+  }
+
+  .img_vert {
+    grid-row: span 2;
+    aspect-ratio: 2/3;
+  }
+
+  .img_horz {
+    grid-column: span 2;
+    aspect-ratio: 16/9;
+  }
+
+  .img_small1,
+  .img_small2 {
+    aspect-ratio: 2/3;
+  }
+  /* ------- GALLERI END ------- */
+
+  /* ------- VIDEO START ------- */
+  video,
+  iframe {
+    width: 45cqw;
+    margin-top: 1vw;
+    margin-left: auto;
+    margin-right: auto;
+    aspect-ratio: 16/9;
+  }
+
+  /* ------- VIDEO END ------- */
+}

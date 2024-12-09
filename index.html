@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- FONT EMBED -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Oswald:wght@200..700&family=Parkinsans:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- FONT EMBED -->
+    <link rel="stylesheet" href="style.css" />
+    <title>Rekords - PASSION</title>
+  </head>
+  <body id="top">
+    <nav>
+      <ul>
+        <li>
+          <div class="logotxt">
+            <img src="img/headset.svg" alt="Headset Logo" class="logo" />
+            <a href="#top" class="sitename">REKORDS</a>
+          </div>
+        </li>
+        <li>
+          <div class="pagelink">
+            <a href="#billedgalleri">&darr; Billedgalleri</a>
+            <a href="#interview">&darr; Interview</a>
+          </div>
+        </li>
+      </ul>
+    </nav>
+    <main>
+      <div class="hero">
+        <script
+          src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+          type="module"
+        ></script>
+        <dotlottie-player
+          src="https://lottie.host/4e3a5a1d-c439-4f91-bc2b-893f2899271d/pF63wC2I8P.lottie"
+          background="transparent"
+          speed="1"
+          loop
+          autoplay
+          style="position: relative; left: 50%"
+        ></dotlottie-player>
+      </div>
+      <div class="grid_1_til_2">
+        <div class="tekst">
+          <h1>Musik er skabt til sjælen</h1>
+          <h2>Peter Nørgaard Hansen lever for musik</h2>
+          <p>
+            I den lille pladeforretning REKORDS, som ligger på Bragesgade 1 på
+            Nørrebro, arbejder Peter hver dag med det han elsker. Peter er med
+            sine egne ord en komplet musiktosse, der altid hører musik, på nær
+            når han sover. Han er medarbejder i butikken REKORDS hvor han hjælpe
+            andre musikelskende ildsjæle med at finde det musik der er for netop
+            dem. Butikken sælger primært hip-hop plader, men har også alt lige
+            fra jazz til figurer af kendte musikere.
+          </p>
+        </div>
+        <img
+          src="img/rekords-1.webp"
+          alt="REKORDS facade fra Bragesgade"
+          class="facade"
+        />
+      </div>
+      <h2 id="billedgalleri">Billedgalleri</h2>
+      <div class="sq_galleri">
+        <img
+          src="img/rekords_square-4.webp"
+          alt="Pladespiller med REKORDS skrevet på"
+        />
+        <img src="img/rekords_square-2.webp" alt="Reol med kassettebånd" />
+        <img src="img/rekords_square-3.webp" alt="Portræt af Peter" />
+        <img
+          src="img/rekords_square-1.webp"
+          alt="Billede af nogle plader i forretningen"
+        />
+      </div>
+      <div class="galleri">
+        <div class="img_vert">
+          <img
+            src="img/rekords-5.webp"
+            alt="Pladespiller med REKORDS skrevet på"
+          />
+        </div>
+        <div class="img_horz">
+          <img src="img/rekords-3.webp" alt="Reol med kassettebånd" />
+        </div>
+        <div class="img_small1">
+          <img src="img/rekords-4.webp" alt="Portræt af Peter" />
+        </div>
+        <div class="img_small2">
+          <img
+            src="img/rekords-5.webp"
+            alt="Billede af nogle plader i forretningen"
+          />
+        </div>
+      </div>
+      <h2 id="interview">
+        Interview med Peter omkring hans kærlighed til musikken
+      </h2>
+      <div class="grid_1_til_2">
+        <video src="video/interview_rekords.mp4" controls></video>
+        <iframe
+          src="https://www.youtube.com/embed/cUp_3WZyTk8?si=ggyOjt1GnAJdF5i-"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </main>
+    <footer>Lavet af Martin Krause</footer>
+  </body>
+</html>
